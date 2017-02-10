@@ -1,0 +1,17 @@
+{
+  "name": "DeMO restaurant",
+  "authors": [
+    "Wei Cai <wc2507@columbia.edu>"
+  ],
+  "description": "",
+  "main": "app.js",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
