@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-md-5 col-sm-6 input_container">
+        <div class="row-custom">
+        <span class="ion-person"></span>
+        <input type="text" class="inputBox" placeholder="First Name">
+        <input type="text" class="inputBox" placeholder="Last Name">
+        </div>
+        <div class="row-custom">
+        <span class="ion-email"></span>
+        <input type='email' class="inputBox" placeholder="Email">
+        </div>
+        <div class="row-custom">
+        <span class="ion-android-call"></span>
+        <input type="tel" class="inputBox" placeholder="Phone Number">
+        </div>
+        <div class="row-custom">
+        <span class="ion-clock"></span>
+        <div class="time_input">
+            <div class="date_input">
+                <input type="text" class="inputBox input_with_button" uib-datepicker-popup ng-model="dt" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" />
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default button-adjust" ng-click="open2()"><i class="ion-calendar"></i></button>
+                </span>
+            </div>
+            <div class="hour_input">
+            <select >
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </select>
+            <span><i class="ion-chevron-up"></i></span>
+            <span><i class="ion-chevron-down"></i></span>
+            </div>
+         </div>
+        </div>
+    </div>
+    <a href="#/makeRes/info" class="button button-slim">Reserve</a>
+</div>

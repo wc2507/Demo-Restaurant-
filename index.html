@@ -7,12 +7,35 @@
         <!--Makes html5 feature avalible for older browser -->
         <script src="https://cdn.jsdelivr.net/g/respond@1.4.2,html5shiv@3.7.3,selectivizr@1.0.3b"></script>
     <!--******************Vendor style files***********************-->
-        <link ref="stylesheet" type="text/css" href="assets/vendor/css/bootstrap-theme.min.css">
-        <link ref="stylesheet" type="text/css" href="assets/vendor/css/bootstrap.min.css">
-        <link ref="stylesheet" type="text/css" href="assets/vendor/css/ionicons.min.css">
+         <link rel="stylesheet" type="text/css" href="assets/vendor/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/vendor/css/ionicons.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet">
     <!--******************Custom style files***********************-->
+        <link rel="stylesheet" type="text/css" href='assets/css/style.css' >
     </head>
-    <body>
+    <body ng-app="app">
+        <div ng-controller=mainPageCtr> 
+            <header ng-include="'assets/templates/header.html'">
+            </header>
+            <section class="section-meal" ng-include = "'assets/templates/foodShowcase.html'">
+            </section>
+            <section class="section-booking" id="anchor1" >
+                <div class="control-pannel" ui-view>
+                </div>
+            </section>
+            <footer>
+            </footer>
+        </div>
+    <!--******************Vendor JS files***********************-->
+        <script src="assets/vendor/js/angular.min.js"></script>
+        <script src="assets/vendor/js/angular-ui-router.min.js"></script>
+        <script src="assets/vendor/js/angular-scroll.min.js"></script>
+        <script src="assets/vendor/js/ui-bootstrap-2.5.0.min.js"></script>
+        <script src="assets/vendor/js/jquery.min.js"></script>
+     <!--******************Custom JS files***********************-->
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/controllers/mainPageControllers.js"></script>
+        <script src="assets/js/controllers/hoursController.js"></script>
         
     </body>
 </html>

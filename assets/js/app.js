@@ -1,0 +1,27 @@
+angular.module('app',['ui.router','ui.bootstrap','duScroll']).config(['$urlRouterProvider','$stateProvider','$uiViewScrollProvider',function($urlRouterProvider,$stateProvider,$uiViewScrollProvider){
+    $urlRouterProvider.otherwise('/home');
+    $uiViewScrollProvider.useAnchorScroll();
+    $stateProvider
+    // normall state should go to make a reservation
+   .state('home',{
+        url:'/home',
+        templateUrl:'assets/templates/makeRes.html'
+    }) 
+    .state('makeRes',{
+        url:'/makeRes',
+        templateUrl:'assets/templates/makeRes.html',
+        controller:'hoursContr'
+    })
+    .state('makeRes.info',{
+        url:'/info',
+        templateUrl:'assets/templates/resInfo.html',
+    })
+    .state('makeRes.resCode',{
+        url:'/code',
+        templateUrl:'assets/templates/resCode.html',
+    })
+    .state('checkStatus',{
+        url:'/checkStatus',
+        templateUrl:'assets/templates/checkRes.html'
+    })
+}])

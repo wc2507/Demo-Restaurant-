@@ -1,0 +1,17 @@
+<h2>Make a Reservation</h2>
+<div class = "resInfo container" ui-view>
+    <ul class="hours" ng-controller='hoursContr'>
+        <li ng-repeat="time in hours">
+            <h3>{{time.type}}</h3>
+            <div class="row justify-content-center" ng-repeat = 'hour in time.hours'>
+                <div class='col-lg-5 col-md-5 text-center'>
+                     {{hour.date}} 
+                </div>
+                <div class='col-lg-6 col-md-7 text-center'>
+                {{hour.time}}
+                </div>
+            </div>
+        </li>
+    </ul>
+    <a href="#/makeRes/info" class="button button-general">Reserve a Table</a>
+</div>
